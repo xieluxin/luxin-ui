@@ -10,30 +10,19 @@
         </p>
       </div>
     </div>
-    <div class="features">
-      <ul>
-        <li>
-          <svg>
-            <use xlink:href="#icon-vue"></use>
-          </svg>
-          <h3>基于 Vue 3</h3>
-          <p>使用了 Vue 3 Composition API</p>
-        </li>
-        <li>
-          <svg>
-            <use xlink:href="#icon-ts"></use>
-          </svg>
-          <h3>基于 TypeScript </h3>
-          <p>源代码采用 TypeScript 书写（非严格检查）</p>
-        </li>
-        <li>
-          <svg>
-            <use xlink:href="#icon-lights"></use>
-          </svg>
-          <h3>代码易读</h3>
-          <p>每个组件的源代码都极其简洁</p>
-        </li>
-      </ul>
+    <div class="luXin-items">
+      <div class="luXin-item">
+        <div class="box">
+          <img src="../../src/assets/img.png" alt="">
+          <div class="info">
+            <p>个人项目</p>
+            <h4>luXin博客</h4>
+            <p>vue2+SpringBoot实现前后端分离项目</p>
+            <a class="more" href="">了解更多 ></a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -78,6 +67,79 @@ $wordColor: #007974;
       &:hover {
         text-decoration: none;
       }
+    }
+  }
+}
+
+.luXin-items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .luXin-item {
+    .box {
+      position: relative;
+      border-radius: 6px ;
+      width: 446px;
+      height: 314px;
+      overflow: hidden;
+      box-shadow: rgb(240, 241, 242) 0px 2px 8px;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all .4s;
+      }
+    }
+
+    .box:hover img {
+      transform: scale(1.05);
+    }
+
+    .box::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .box:hover::after {
+      opacity: 1;
+    }
+
+    .info {
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      z-index: 999;
+      padding: 25px 30px;
+      font-size: 18px;
+      color: #ffffff;
+      transition: all .5s;
+
+      h4 {
+        font-size: 24px;
+        margin: 5px 0;
+      }
+
+      .a {
+        color: #ffffff;
+        margin-top: 15px;
+        display: block;
+      }
+
+      .more {
+        margin-top: 15px;
+      }
+    }
+
+    .box:hover .info {
+      bottom: 0;
     }
   }
 }
