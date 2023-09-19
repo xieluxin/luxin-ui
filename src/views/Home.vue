@@ -10,20 +10,20 @@
         </p>
       </div>
     </div>
-    <div class="luXin-items">
-      <div class="luXin-item">
-        <div class="box">
-          <img src="../../src/assets/img.png" alt="">
-          <div class="info">
-            <p>个人项目</p>
-            <h4>luXin博客</h4>
-            <p>vue2+SpringBoot实现前后端分离项目</p>
-            <a class="more" href="">了解更多 ></a>
-          </div>
-        </div>
-      </div>
+<!--    <div class="luXin-items">-->
+<!--      <div class="luXin-item">-->
+<!--        <div class="box">-->
+<!--          <img src="../../src/assets/img.png" alt="">-->
+<!--          <div class="info">-->
+<!--            <p>个人项目</p>-->
+<!--            <h4>luXin博客</h4>-->
+<!--            <p>vue2+SpringBoot实现前后端分离项目</p>-->
+<!--            <a class="more" href="">了解更多 ></a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
-    </div>
+<!--    </div>-->
   </div>
 </template>
 
